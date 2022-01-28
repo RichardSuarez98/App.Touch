@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App.Touch.Views.ViewHome.Ingreso.VisitaAnunciada">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="iconHome.png" x:Name="IconHome" Clicked="IconHome_Clicked"  />
+    </ContentPage.ToolbarItems>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Frame Grid.Row="1" CornerRadius="600" BackgroundColor="Yellow" Padding="100">
+            <Label Text="Visita Anunciada" />
+        </Frame>
+        
+        
+    </Grid>
+    
+    
+    
+</ContentPage>

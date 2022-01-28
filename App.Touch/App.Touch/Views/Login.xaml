@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App.Touch.Views.Login">
+
+    <ScrollView Background="#FACD0B">
+        <Grid Padding="20" ColumnSpacing="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" Grid.Column="0">
+                <StackLayout VerticalOptions="Center">
+                    <Label Text="USUARIO" FontAttributes="Bold" TextColor="White"/>
+                    
+                    <Frame
+                   CornerRadius     ="13"
+                   IsClippedToBounds="true" Padding="3">
+                        <Entry x:Name="txtUsuario" Text="USUARIO304" Placeholder="USUARIO304" BackgroundColor="White"  />
+                    </Frame>
+                    <Label />
+                    <!--Entry Text="USUARIO304" Placeholder="USUARIO304" BackgroundColor="White"  /-->
+                    <Label Text="CLAVE" Grid.Row="2" FontAttributes="Bold" TextColor="White"/>
+                    <Frame
+                   CornerRadius     ="13"
+                   IsClippedToBounds="true" Padding="3">
+                        <Entry x:Name="txtClave"  IsPassword="True" Placeholder="PASSWORD" BackgroundColor="White" Text="12345678910" />
+                    </Frame>
+                    <Label />
+                    <Button x:Name="btnIngresar" Clicked="btnIngresar_Clicked"  Text="INGRESAR" Grid.ColumnSpan="3" BorderRadius="13" BackgroundColor="White" TextColor="Black" FontAttributes="Bold"/>
+
+                    <!--Entry IsPassword="True" Placeholder="JUANITO123" BackgroundColor="White" Text="12345678910"/-->
+                </StackLayout>
+            </Grid >
+            <!--Grid Grid.Row="1" Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                <Button  Text="INGRESAR" Grid.ColumnSpan="3" BorderRadius="13" BackgroundColor="White" TextColor="Black" FontAttributes="Bold"/>
+
+            </Grid-->
+
+        </Grid>
+    </ScrollView>
+</ContentPage>
